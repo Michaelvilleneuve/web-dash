@@ -1,0 +1,19 @@
+<meta http-equiv="refresh" content="20;">
+<p id="notice"><%= notice %></p>
+<table>
+  <tbody>
+    <% @sites.each do |site| %>
+      <tr height="20">
+        <td width="100" class="site" data-url="<%= site.url %>" data-checker="<%= site.checker %>"></td>
+        <td><%= site.title %></td>
+        <td><%= link_to 'Voir', site %></td>
+        <td><%= link_to 'Modifier', edit_site_path(site) %></td>
+        <td><%= link_to 'Supprimer', site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Rajouter un site', new_site_path %>
