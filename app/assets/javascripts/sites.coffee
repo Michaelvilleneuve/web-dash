@@ -14,14 +14,11 @@ Site =
 			el = $(this)
 			$.get($(this).data("url"), (data) ->
 				if(data.responseText.indexOf(checker) > -1)
-					el.html('OK')
 					el.parent('tr').addClass('ok')
 				else
-					el.html('NOT GOOD')
 					el.parent('tr').addClass('ko')
 					alert(el.data("url") + " ne fonctionne pas")
 				).fail ->
-					el.html('NOT GOOD')
 					el.parent('tr').addClass('ko')
 					alert(el.data("url") + " ne fonctionne pas")
 
