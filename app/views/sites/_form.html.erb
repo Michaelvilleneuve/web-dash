@@ -13,19 +13,19 @@
 
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: 'ex : Amazon' %>
   </div>
   <div class="field">
     <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <%= f.text_field :url, placeholder: 'ex : https://amazon.fr' %>
   </div>
   <div class="field">
     <%= f.label :checker %><br>
-    <%= f.text_field :checker %>
+    <%= f.text_area :checker, placeholder: 'Une phrase ou un bout de code sensé être dans la page chargée', style: 'height: 60px' %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, placeholder: 'Vous pouvez par exemple indiquer les mot de passe et accès au site au cas où', style: 'height: 100px' %>
   </div>
   <div class="actions">
     <%= f.submit %>
