@@ -19,9 +19,11 @@ Site =
 				else
 					el.html('NOT GOOD')
 					el.parent('tr').addClass('ko')
+					alert(el.data("url") + " ne fonctionne pas")
 				).fail ->
 					el.html('NOT GOOD')
 					el.parent('tr').addClass('ko')
+					alert(el.data("url") + " ne fonctionne pas")
 
 
 
