@@ -5,7 +5,7 @@ Site =
 	init: ->
 		$.ajaxSetup
 			cache: false
-			timeout: 5000
+			timeout: 9000
 		@verifyUrl()
 
 	verifyUrl: ->
